@@ -19,9 +19,8 @@ class App extends Component {
       <ApolloProvider client={client}>
         <Router>
           <div>
-            <Route path='/' component={Home} exact />
-            <Route path='/babies' component={BabyList} exact />
-            <Route path='/babies/new' component={BabyCreate} exact />
+            <Route path='/' component={BabyList} exact />
+            <Route path='/babies/new' component={BabyCreate} />
           </div>
         </Router>
       </ApolloProvider>

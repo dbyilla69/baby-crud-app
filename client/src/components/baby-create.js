@@ -21,7 +21,7 @@ class BabyCreate extends Component {
         },
         refetchQueries: [{ query }] // not associate with  component, you can use this syntax
       })
-      .then(() => this.props.history.push('/babies'));
+      .then(() => this.props.history.push('/'));
   }
   render() {
     let styles = {
@@ -29,7 +29,7 @@ class BabyCreate extends Component {
     };
     return (
       <div>
-        <Link to='/babies'>Back</Link>
+        <Link to='/'>Back</Link>
         <h3>Create a New Baby</h3>
         <form onSubmit={this.onSubmit.bind(this)}>
           <label>Baby Name: </label>
