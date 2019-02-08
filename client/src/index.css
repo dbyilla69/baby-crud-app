@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.collection-item {
+ display:flex;
+ justify-content: space-between;
+};
+
+.material-icons{
+  cursor: pointer;
+}
+
+

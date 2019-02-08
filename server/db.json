@@ -1,7 +1,12 @@
 {
   "babies": [
-    { "id": 1, "babyName": "Shannon", "gender": "female" },
-    { "id": 2, "babyName": "Jessica", "gender": "female" },
-    { "id": 3, "babyName": "Billy", "gender": "male" }
+    {
+      "babyName": "Shannon",
+      "id": 1
+    },
+    {
+      "babyName": "Jacob",
+      "id": 2
+    }
   ]
 }
