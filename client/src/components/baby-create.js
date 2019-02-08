@@ -24,15 +24,20 @@ class BabyCreate extends Component {
       .then(() => this.props.history.push('/babies'));
   }
   render() {
+    let styles = {
+      width: '500px'
+    };
     return (
       <div>
         <Link to='/babies'>Back</Link>
         <h3>Create a New Baby</h3>
         <form onSubmit={this.onSubmit.bind(this)}>
-          <label>Baby Name:</label>
+          <label>Baby Name: </label>
           <input
+            placeholder="Place prefered name here"
             onChange={event => this.setState({ babyName: event.target.value })}
             value={this.state.babyName}
+            style ={styles}
           />
         </form>
       </div>

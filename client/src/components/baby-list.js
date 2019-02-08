@@ -26,13 +26,18 @@ class BabyList extends Component {
     });
   }
   render() {
+    let styles = {
+
+      width: '700px'
+    };
     if (this.props.data.loading) {
       return <div>Loading...</div>;
     }
 
     return (
       <div>
-        <ul className='collection'>{this.renderBabies()}</ul>
+        <h3>Baby List</h3>
+        <ul className='collection' style={styles}>{this.renderBabies()}</ul>
         <Link to='/babies/new' className='btn-floating btn-large red right'>
           <i className='material-icons'>add</i>
         </Link>
